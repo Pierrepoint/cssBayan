@@ -1,0 +1,219 @@
+@font-face {
+  font-family: manropeRegular;
+  src: url(font/Manrope-Regular.ttf);
+}
+
+html, body {
+  font-family: manropeRegular;
+  margin: 0%;
+  padding: 0%;
+  background-color: #e4eeee;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  color: #192bc7;
+}
+
+h1{
+  color: rgb(0, 0, 0) !important;
+}
+
+h3 {
+  margin: 0% 0% 3% 0%;
+}
+
+input {
+  opacity: 0%;
+  width: 0%;
+  height: 0%;
+  margin: 0%;
+}
+
+.itemContainer {
+  border-top: 0.1em solid #9e9e9e;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+img.plusSign {
+  transition: all 0.2s ease-in-out;
+  margin: 1% 0% 0% 0%;
+  opacity: 0%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+img.meme {
+  opacity: 0%;
+  padding: 0% 0%;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease-in-out;
+  margin: auto;
+}
+
+.itemContainer:active {
+  color: #192bc7;
+}
+
+.itemContainer:active img.plusSign {
+  filter: invert(17%) sepia(100%) saturate(3223%) hue-rotate(235deg) brightness(76%) contrast(111%);
+}
+
+.itemContainer:active img.meme {
+  filter: opacity(70%);
+}
+
+input:checked ~ *{
+color:rgb(0, 0, 0);
+}
+
+input:checked ~ img.meme{
+  opacity: 100%;
+  padding: 5% 5%;
+}
+
+input:checked ~ .title > .plusSign{
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 819px) and (min-width: 320px){
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.85rem;
+  }
+
+  input:checked ~ img.meme{
+    width: 45%;
+    height: 45%;
+  }
+
+  img.plusSign {
+    height: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 1919px) and (min-width: 820px){
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  input:checked ~ img.meme{
+    width: 50%;
+    height: 50%;
+  }
+
+  img.plusSign {
+    height: 1.5rem;
+  }
+
+}
+
+@media screen and (min-width: 1920px){
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.1rem;
+  }
+
+  input:checked ~ img.meme{
+    width: 65%;
+    height: 65%;
+  }
+    
+  img.plusSign {
+    height: 2.1rem;
+  }
+
+}
+
+@media (hover:hover) and (max-width: 819px) and (min-width: 320px) {
+
+  .container:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .container:hover .plusSign {
+    opacity: 100%;
+  }
+  
+  .itemContainer:hover img.plusSign {
+    transform: rotate(45deg);
+  }
+  
+  .itemContainer:hover img.meme {
+    opacity: 100%;
+    width: 45%;
+    height: 45%;
+    padding: 5% 5%;
+  }
+
+}
+
+@media (hover:hover) and (max-width: 1919px) and (min-width: 820px) {
+
+  .container:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .container:hover .plusSign {
+    opacity: 100%;
+  }
+  
+  .itemContainer:hover img.plusSign {
+    transform: rotate(45deg);
+  }
+  
+  .itemContainer:hover img.meme {
+    opacity: 100%;
+    width: 50%;
+    height: 50%;
+    padding: 5% 5%;
+  }
+
+}
+
+@media (hover:hover) and (min-width: 1920px) {
+
+  .container:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .container:hover .plusSign {
+    opacity: 100%;
+  }
+  
+  .itemContainer:hover img.plusSign {
+    transform: rotate(45deg);
+  }
+  
+  .itemContainer:hover img.meme {
+    opacity: 100%;
+    width: 65%;
+    height: 65%;
+    padding: 5% 5%;
+  }
+
+}
