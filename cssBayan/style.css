@@ -28,7 +28,7 @@ input {
   opacity: 0%;
   width: 0%;
   height: 0%;
-  margin: 0;
+  margin: 0%;
 }
 
 .itemContainer {
@@ -53,7 +53,7 @@ img.plusSign {
 }
 
 img.meme {
-  opacity: 0;
+  opacity: 0%;
   padding: 0% 0%;
   width: 0%;
   height: 0%;
@@ -78,7 +78,7 @@ color:rgb(0, 0, 0);
 }
 
 input:checked ~ img.meme{
-  opacity: 1;
+  opacity: 100%;
   padding: 5% 5%;
 }
 
@@ -164,7 +164,7 @@ input:checked ~ .title > .plusSign{
   }
   
   .itemContainer:hover img.meme {
-    opacity: 1;
+    opacity: 100%;
     width: 50%;
     height: 50%;
     padding: 5% 5%;
